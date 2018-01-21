@@ -1,3 +1,6 @@
 [submodule "src/github.com/aemengo/bosh-deployment-dashboard"]
 	path = src/github.com/aemengo/bosh-deployment-dashboard
 	url = https://github.com/aemengo/bosh-deployment-dashboard.git
+[submodule "src/github.com/aemengo/bosh-deployment-dashboard-ui"]
+	path = src/github.com/aemengo/bosh-deployment-dashboard-ui
+	url = https://github.com/aemengo/bosh-deployment-dashboard-ui.git
