@@ -1,0 +1,20 @@
+---
+name: bdd-agent
+
+templates:
+  bdd-agent-ctl.erb: bin/bdd-agent-ctl
+  config.yml.erb: config/config.yml
+
+packages:
+- agent
+- pid-utils
+
+properties:
+  label:
+    description: Arbitrary label for grouping metrics sent from this VM.
+    default: ""
+  hub.ip:
+    description: IP address of hub host where agent will send metrics.
+  hub.port:
+    description: Port of hub host where agent will send metrics.
+    default: "8509"

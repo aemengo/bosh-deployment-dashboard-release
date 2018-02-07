@@ -1,1 +1,6 @@
---- {}
+golang/go1.9.1.linux-amd64.tar.gz:
+  size: 104197862
+  sha: 8ab67607ac917684560e699b76b3121f5799e24e
+web/web.tgz:
+  size: 51129
+  sha: 07a20ffdfe260b804f3e748c2071209c564f2b55

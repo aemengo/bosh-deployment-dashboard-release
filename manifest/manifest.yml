@@ -1,0 +1,36 @@
+name: bdd
+releases:
+- name: bosh-deployment-dashboard
+  version: latest
+
+instance_groups:
+- name: bdd
+  azs:
+  - z1
+  instances: 1
+  networks:
+  - name: default
+  jobs:
+  - name: bdd-hub
+    release: bosh-deployment-dashboard
+  - name: bdd-agent
+    release: bosh-deployment-dashboard
+  stemcell: default
+  vm_type: default
+  properties:
+    label: test-drive
+    hub:
+      ip: 127.0.0.1
+
+variables: []
+
+stemcells:
+- alias: default
+  os: ubuntu-trusty
+  version: latest
+
+update:
+  canaries: 0
+  max_in_flight: 2
+  canary_watch_time: 5000-60000
+  update_watch_time: 5000-60000

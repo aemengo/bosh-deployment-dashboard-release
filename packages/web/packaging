@@ -1,0 +1,3 @@
+set -e
+
+tar xf web/web.tgz -C ${BOSH_INSTALL_TARGET}

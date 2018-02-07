@@ -1,0 +1,11 @@
+<%
+config = {
+    'hub' => {
+        'ip' => '0.0.0.0',
+        'port' => p('hub.port'),
+        'data_dir' => '/var/vcap/data/bdd-hub',
+        'web_dir' => '/var/vcap/packages/web/build'
+    }
+}
+%>
+<%= config.to_yaml %>

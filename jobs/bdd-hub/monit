@@ -1,0 +1,5 @@
+check process bdd-hub
+  with pidfile /var/vcap/sys/run/bdd-hub/bdd-hub.pid
+  start program "/var/vcap/jobs/bdd-hub/bin/bdd-hub-ctl start"
+  stop program "/var/vcap/jobs/bdd-hub/bin/bdd-hub-ctl stop"
+  group vcap

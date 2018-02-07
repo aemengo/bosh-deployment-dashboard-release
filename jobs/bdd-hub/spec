@@ -1,0 +1,16 @@
+---
+name: bdd-hub
+
+templates:
+  bdd-hub-ctl.erb: bin/bdd-hub-ctl
+  config.yml.erb: config/config.yml
+
+packages:
+- hub
+- web
+- pid-utils
+
+properties:
+  hub.port:
+    description: Port of hub host where agent will send metrics.
+    default: "8509"

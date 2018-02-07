@@ -1,0 +1,8 @@
+---
+name: hub
+
+dependencies:
+- golang
+
+files:
+- github.com/aemengo/bosh-deployment-dashboard/**/*

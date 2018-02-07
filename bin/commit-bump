@@ -22,5 +22,5 @@ function submodule_log() {
 }
 
 pushd $dir >/dev/null
-  submodule_log $@ | git duet-commit --file -
+  submodule_log $@ | git commit --file -
 popd >/dev/null

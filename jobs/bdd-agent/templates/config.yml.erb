@@ -1,0 +1,21 @@
+<%
+config = {
+    'label' => p('label'),
+    'hub' => {
+        'ip' => p('hub.ip'),
+        'port' => p('hub.port'),
+        'data_dir' => '/var/vcap/data/bdd-hub',
+        'web_dir' => '/var/vcap/packages/web/build'
+    },
+    'spec' => {
+        'id' => spec.id,
+        'instance_name' => spec.name,
+        'address' => spec.address,
+        'az' => spec.az,
+        'deployment' => spec.deployment,
+        'index' => spec.index,
+        'ip' => spec.ip
+    }
+}
+%>
+<%= config.to_yaml %>

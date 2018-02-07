@@ -1,0 +1,5 @@
+check process bdd-agent
+  with pidfile /var/vcap/sys/run/bdd-agent/bdd-agent.pid
+  start program "/var/vcap/jobs/bdd-agent/bin/bdd-agent-ctl start"
+  stop program "/var/vcap/jobs/bdd-agent/bin/bdd-agent-ctl stop"
+  group vcap
